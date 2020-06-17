@@ -1,0 +1,29 @@
+[package]
+name = "zkplmt"
+version = "0.1.0"
+authors = ["debashishc"]
+edition = "2018"
+
+#default = ['std']
+# std = [
+#     'primitives/std',
+# ]
+
+[dependencies]
+curve25519-dalek = {version = "2.0.0", features=["serde"]}
+#rand_os = "0.1.2"
+rand_core = "0.5.0"
+#rust-crypto = "0.2.36"
+sha2 = "0.8.0"
+# criterion = "0.1.2"
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.2.1"
+
+# [dependencies.primitives]
+# git = 'https://github.com/paritytech/substrate.git'
+# package = 'substrate-primitives'
+# rev = '24a18eabda157a262429695cf4c07712a888381b'
+
+# [[bench]]
+# name = "benchmark"
+# harness = false
